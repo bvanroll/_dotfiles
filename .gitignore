@@ -1,0 +1,17 @@
+*.secret
+*.log
+.config/discord
+.config/vim-easycomplete/
+.vim/plugged
+.config/cef_user_data
+.config/systemd
+.config/pulse
+.config/mimeapps.list
+.config/user-dirs.dirs
+.config/pavucontrol.ini
+.config/user-dirs.locale
+.config/gamescope
+.config/environment.d
+.config/aerc
+.config/automapaper
+.config/dconf
