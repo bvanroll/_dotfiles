@@ -81,7 +81,9 @@ set lazyredraw
 " enable regex enginej
 set regexpengine=0
 
-
+"Configure backspace so it acts as it should act 
+set backspace=eol,start,indent 
+set whichwrap+=<,>,h,l
 
 "plugins config
 
@@ -89,7 +91,7 @@ set regexpengine=0
 
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
-  Plug 'prabirshrestha/vim-lsp'
+"  Plug 'prabirshrestha/vim-lsp'
   Plug 'SirVer/ultisnips'
   Plug 'sheerun/vim-polyglot'
   Plug 'petrbroz/vim-glsl'
@@ -138,4 +140,15 @@ autocmd! BufNewFile,BufRead *.fsh set ft=glsl
 
 
 set updatetime=300
+" easy complete settings:
+" highlight the symbol when holding the cursor if you need it 
+let g:easycomplete_cursor_word_hl = 1
+" using nerdfont is highly recommened
+let g:easycomplete_nerd_font = 1
+"goto code nav
+
+noremap gr :EasyCompleteReference<CR>
+noremap gd :EasyCompleteGotoDefinition<CR> 
+noremap rn :EasyCompleteRename<CR> 
+noremap gb :BackToOrignialBuffer<CR> 
 
