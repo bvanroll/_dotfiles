@@ -1,0 +1,2 @@
+alias glslv=glslViewer
+alias reload='source ~/.zshrc && clear'
