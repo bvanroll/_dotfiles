@@ -167,6 +167,44 @@ gaps inner 5px
 gaps outer 4px
 
 # resize window (you can also use the mouse for that)
+
+bindsym ctrl+w mode focus 
+bindsym ctrl+shift+w mode move
+mode "focus" {
+  bindsym Shift+h focus left
+  bindsym Shift+j focus down
+  bindsym Shift+k focus up
+  bindsym Shift+l focus right
+
+  bindsym h focus left; mode default
+  bindsym j focus down; mode default 
+  bindsym k focus up; mode default
+  bindsym l focus right; mode default 
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym ctrl+w mode "default"
+  bindsym ctrl+shift+w mode "move"
+}
+
+
+mode "move" {
+  bindsym Shift+h move left
+  bindsym Shift+j move down
+  bindsym Shift+k move up
+  bindsym Shift+l move right
+
+  bindsym h move left; mode default
+  bindsym j move down; mode default 
+  bindsym k move up; mode default
+  bindsym l move right; mode default 
+
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym ctrl+shift+w mode "default"
+  bindsym ctrl+w mode "focus"
+}
+
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 

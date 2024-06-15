@@ -19,10 +19,10 @@ set ai
 set si
 set wrap 
 
-" Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
-vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
-vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+"vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+"vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
 
 " enable syntax highlighting
 syntax on
@@ -58,8 +58,7 @@ set showmode
 "au FocusGained,BufEnter * silent! checktime
 
 " mapping a leader allows for more keycombos
-
-let mapleader = ","
+"let mapleader = ","
 
 " auto completion menu after tab
 set wildmenu
@@ -70,7 +69,7 @@ set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 " show current pos info
 set ruler
 
-set laststatus=2
+"set laststatus=2
 
 "ignore case when searching
 set ignorecase
@@ -79,11 +78,11 @@ set ignorecase
 set lazyredraw
 
 " enable regex enginej
-set regexpengine=0
+"set regexpengine=0
 
 "Configure backspace so it acts as it should act 
-set backspace=eol,start,indent 
-set whichwrap+=<,>,h,l
+"set backspace=eol,start,indent 
+"set whichwrap+=<,>,h,l
 
 "plugins config
 
@@ -93,28 +92,30 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
 "  Plug 'prabirshrestha/vim-lsp'
   Plug 'SirVer/ultisnips'
-  Plug 'sheerun/vim-polyglot'
+  "Plug 'sheerun/vim-polyglot'
   Plug 'petrbroz/vim-glsl'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
+  "Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'jayli/vim-easycomplete'
+  Plug 'kien/rainbow_parenthesis'
+  "Plug 'kien/rainbow_parenth
 call plug#end()
 
 
 
 "nerdtree mappings
-nnoremap <leader>n :NerdTreeFocus<CR>
+"nnoremap <leader>n :NerdTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 "nerdtree git settings
-let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
+"let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 
 "ultisnip config
-let g:UltiSnipsExpandTrigger="<C-s>"
-let g:UltiSnipsJumpForwardTrigger="<C-b>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-
-let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsExpandTrigger="<C-s>"
+"let g:UltiSnipsJumpForwardTrigger="<C-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+"
+"let g:UltiSnipsEditSplit="vertical"
 
 colorscheme gruvbox
 set background=dark
@@ -139,16 +140,16 @@ autocmd! BufNewFile,BufRead *.frag set ft=glsl
 autocmd! BufNewFile,BufRead *.fsh set ft=glsl
 
 
-set updatetime=300
+set updatetime=3000
 " easy complete settings:
 " highlight the symbol when holding the cursor if you need it 
-let g:easycomplete_cursor_word_hl = 1
+"let g:easycomplete_cursor_word_hl = 1
 " using nerdfont is highly recommened
-let g:easycomplete_nerd_font = 1
+"let g:easycomplete_nerd_font = 1
 "goto code nav
 
-noremap gr :EasyCompleteReference<CR>
-noremap gd :EasyCompleteGotoDefinition<CR> 
-noremap rn :EasyCompleteRename<CR> 
-noremap gb :BackToOrignialBuffer<CR> 
+"noremap gr :EasyCompleteReference<CR>
+"noremap gd :EasyCompleteGotoDefinition<CR> 
+"noremap rn :EasyCompleteRename<CR> 
+"noremap gb :BackToOrignialBuffer<CR> 
 
