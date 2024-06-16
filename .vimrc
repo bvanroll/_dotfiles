@@ -98,6 +98,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'jayli/vim-easycomplete'
   Plug 'kien/rainbow_parenthesis'
   "Plug 'kien/rainbow_parenth
+  Plug 'ap/vim-css-color'
 call plug#end()
 
 

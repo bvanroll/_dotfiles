@@ -168,8 +168,9 @@ gaps outer 4px
 
 # resize window (you can also use the mouse for that)
 
-bindsym ctrl+w mode focus 
-bindsym ctrl+shift+w mode move
+# these two badboys actually are so vim like they interfere with vim :/ i'm an idiot
+# bindsym ctrl+w mode focus 
+# bindsym ctrl+shift+w mode move
 mode "focus" {
   bindsym Shift+h focus left
   bindsym Shift+j focus down
