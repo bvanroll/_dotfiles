@@ -21,3 +21,9 @@
 .config/GIMP/
 .config/weylus/
 .config/smassh/
+.config/Valve/
+.config/openvr/
+.config/openxr/
+.config/unity3d/
+.config/vlc/
+.config/QtProject.conf
