@@ -27,3 +27,6 @@
 .config/unity3d/
 .config/vlc/
 .config/QtProject.conf
+.config/godot/
+.config/unity3d/
+.config/unityhub/
