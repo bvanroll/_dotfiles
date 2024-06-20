@@ -154,3 +154,7 @@ set updatetime=3000
 "noremap rn :EasyCompleteRename<CR> 
 "noremap gb :BackToOrignialBuffer<CR> 
 
+
+" source the overrides
+"
+so ~/.vim/overrides
