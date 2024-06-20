@@ -22,3 +22,12 @@
 .config/weylus/
 .config/smassh/
 .vim/overrides
+.config/Valve/
+.config/openvr/
+.config/openxr/
+.config/unity3d/
+.config/vlc/
+.config/QtProject.conf
+.config/godot/
+.config/unity3d/
+.config/unityhub/

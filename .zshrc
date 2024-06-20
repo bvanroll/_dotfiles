@@ -106,6 +106,7 @@ export EDITOR='vim'
 # Use vim bindings
 bindkey -v
 
+bindkey "^R" history-incremental-search-backward
 
 source $HOME/.alias
 #alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

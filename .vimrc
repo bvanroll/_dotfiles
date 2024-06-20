@@ -99,6 +99,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'kien/rainbow_parenthesis'
   "Plug 'kien/rainbow_parenth
   Plug 'ap/vim-css-color'
+  Plug 'rust-lang/rust.vim'
 call plug#end()
 
 
