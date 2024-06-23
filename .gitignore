@@ -31,3 +31,4 @@
 .config/godot/
 .config/unity3d/
 .config/unityhub/
+.config/overrides.zsh

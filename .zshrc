@@ -112,3 +112,4 @@ source $HOME/.alias
 #alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # check last_key date
 ## TODO
+source $HOME/.config/overrides.zsh
