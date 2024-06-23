@@ -1,4 +1,3 @@
-
 " Disable compatibility with vi
 set nocompatible
 
@@ -91,6 +90,7 @@ set lazyredraw
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
 "  Plug 'prabirshrestha/vim-lsp'
+  "Plug 'tpope/vim-surround'
   Plug 'SirVer/ultisnips'
   "Plug 'sheerun/vim-polyglot'
   Plug 'petrbroz/vim-glsl'
