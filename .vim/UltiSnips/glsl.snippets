@@ -227,3 +227,14 @@ snippet fn_tile "tiles the screenspace" b
 vec2 tile(vec2 st, float tiles) {return fract(st*tiles)-.5; }
 endsnippet
 
+snippet fn_star "star sdf function" b
+float starSDF(vec2 st, float V, float s) {
+  st = st*2.;
+  float a = atan(st.y, st.x)/(2.*3.14159265359);
+  float seg = a * V;
+  a = ((floor(seg) + .5)/V + mix(s, -s,step(.5,fract(seg)))) * (2.*3.14159265359);
+  return abs(dot(vec2(cos(a),sin(a)),st));
+}
+endsnippet
+
+
