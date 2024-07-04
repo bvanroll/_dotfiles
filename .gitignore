@@ -41,3 +41,4 @@
 .config/electron-builder.json 
 .config/dolphinrc 
 .config/vesktop/ 
+.config/Vencord/dist/
