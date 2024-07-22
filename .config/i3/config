@@ -250,6 +250,8 @@ bar {
 	}
 }
 
+exec swayidle -w timeout 3600 'swaymsg "output * power off"' timeout 3605 'systemctl suspend' resume 'swaymsg "output * power on"'
+
 
 # network manager applet, show wifi etc.
 exec nm-applet
